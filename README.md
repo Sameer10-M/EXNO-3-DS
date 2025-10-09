@@ -178,6 +178,38 @@ plt.show()
 ```
 <img width="1102" height="713" alt="image" src="https://github.com/user-attachments/assets/064167fc-f976-4540-b751-de6a2f9f580e" />
 
+```
+y_pred = rf.predict(X_test)
+from sklearn.metrics import accuracy_score
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Model accuracy using selected features: {accuracy}")
+```
+<img width="1314" height="165" alt="image" src="https://github.com/user-attachments/assets/be629010-1993-46f2-a8cf-5cd8f56fe0d4" />
+
+```
+!pip install skfeature-chappers
+```
+<img width="1515" height="666" alt="image" src="https://github.com/user-attachments/assets/72d22288-35fe-4da6-9390-5bb828bd2521" />
+
+```
+df[categorical_columns] = df[categorical_columns].apply(lambda x: x.cat.codes)
+df[categorical_columns]
+```
+<img width="1107" height="558" alt="image" src="https://github.com/user-attachments/assets/7269d8e1-94eb-4e2b-9063-1c60372efd45" />
+
+```
+print("\nSelected features using ANOVA:")
+print(selected_features_anova)
+```
+<img width="1346" height="147" alt="image" src="https://github.com/user-attachments/assets/dd25126a-7551-402f-96d9-c9ae7b3d843e" />
+
+```
+df[categorical_columns]
+```
+<img width="1191" height="558" alt="image" src="https://github.com/user-attachments/assets/7e3992a6-3d3e-461a-9ce7-959015397daa" />
+
+
+
 
 # RESULT:
 Thus the given data and perform Feature Encoding and Transformation process is done.
